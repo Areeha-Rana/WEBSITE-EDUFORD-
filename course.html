@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Lalaland - courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <section class="subheader">
+        <nav class="subheader__nav">
+            <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+            <!-- NAVIGATIONAL LINKS -->
+            <div class="header__links" id="headerLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- HEADER SECTION -->
+        <h1 class="subheader__h1">Our Courses</h1>
+    </section>
+
+    <!-- COURSE SECTION -->
+    <section class="course">
+        <h1 class="course__h1">Courses We Offer</h1>
+        <p class="course__p">Explore a wide variety of courses designed to help you achieve your goals. From beginner to
+            advanced levels, we offer programs in technology, business, science, and more, tailored to meet the needs of
+            today's dynamic world.</p>
+        <div class="course__row">
+
+            <div class="course-col" id="one">
+                <h3 class="course-col__h3">Intermediate</h3>
+                <p class="course-col__p">Our intermediate courses are designed for those with a basic understanding of
+                    the subject who want to deepen their skills. These courses focus on practical applications, advanced
+                    techniques, and real-world projects to help you excel.</p>
+            </div>
+
+            <div class="course-col" id="two">
+                <h3 class="course-col__h3">Degree</h3>
+                <p class="course-col__p">Our degree programs provide comprehensive education and in-depth knowledge in
+                    your chosen field. With a focus on academic excellence, practical experience, and career readiness,
+                    these programs are designed to prepare you for a successful future.</p>
+            </div>
+            <div class="course-col" id="three">
+                <h3 class="course-col__h3">Post Graduation</h3>
+                <p class="course-col__p">Our post-graduation courses offer specialized knowledge and advanced skills to
+                    help you excel in your career. Designed for professionals looking to deepen their expertise, these
+                    programs provide opportunities for research, leadership development, and hands-on experience in the
+                    latest industry trends.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FACILITIES SECTION -->
+    <section class="facilities">
+        <h1 class="facilities__h1">Our Facilities</h1>
+        <p class="facilities__p">Our university offers state-of-the-art facilities to support student learning and
+            growth. From modern lecture halls and fully equipped laboratories to a comprehensive library and
+            collaborative study spaces, we ensure a conducive environment for academic excellence. Additionally, our
+            sports complex, on-campus accommodation, and dining options provide a vibrant campus life experience for all
+            students.</p>
+        <div class="facilities__row">
+
+            <div class="facilities-col">
+                <img src="./images/library.png" alt="">
+                <div class="popup">
+                    <h3 class="facilities-col__h3 popup__h3">World Class Library</h3>
+                    <p class="facilities-col__p popup__p">Our world-class library is the heart of academic resources,
+                        offering an extensive collection of
+                        books, journals, digital materials, and research databases. Equipped with quiet study zones,
+                        group
+                        discussion rooms, and modern technology, it provides an ideal space for learning, research, and
+                        collaboration.</p>
+                </div>
+            </div>
+            <div class="facilities-col">
+                <img src="./images/basketball.png" alt="">
+                <div class="popup">
+                    <h3 class="facilities-col__h3 popup__h3">Largest Playground</h3>
+                    <p class="facilities-col__p popup__p">Our university boasts the largest playground in the region,
+                        designed to cater to a variety of sports
+                        and recreational activities. From basketball courts and football fields to running tracks, it
+                        provides students with ample opportunities to stay active, compete, and unwind.</p>
+                </div>
+            </div>
+            <div class="facilities-col">
+                <img src="./images/cafeteria.png" alt="">
+                <div class="popup"></div>
+                <h3 class="facilities-col__h3 popup__h3">Tasty and Healthy Food</h3>
+                <p class="facilities-col__p popup__p">Our cafeteria offers a wide variety of tasty and nutritious food
+                    options to suit all preferences and
+                    dietary needs. With fresh ingredients, diverse menus, and a welcoming atmosphere, it's the perfect
+                    place for students to relax, socialize, and recharge during their busy day.</p>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <p class="center bttt">
+        <a class="bttt__a" href="#">Back to the top</a>
+    </p>
+
+    <!-- FOOTER SECTION -->
+    <section class="footer">
+        <h4 class="footer__h4">About Us</h4>
+        <p class="footer__p">We are committed to shaping the future by providing quality education, fostering
+            innovation, and inspiring individuals to achieve their full potential.<br>Our university values diversity,
+            inclusivity, and excellence, aiming to create a global community of learners and leaders.</p>
+        <div class="footer__icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>All copyrights belong to the University of Lalaland<br>&lt;&lt;&lt; &copy; 2024 &gt;&gt;&gt;</p>
+    </section>
+
+</body>
+
+</html>

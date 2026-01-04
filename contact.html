@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Lalaland - contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <section class="subheader">
+        <nav class="subheader__nav">
+            <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+            <!-- NAVIGATIONAL LINKS -->
+            <div class="header__links" id="headerLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- HEADER SECTION -->
+        <h1 class="subheader__h1">Contact Us</h1>
+    </section>
+
+    <!-- CONTACT US -->
+    <section class="location">
+       <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.352676180252!2d73.1173195!3d31.4180853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922699b460418e1%3A0x54d1f6dc7fe1d4f8!2sGC%20Women%20University%20Faisalabad!5e0!3m2!1sen!2s!4v1735600000000"
+  width="100%"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+    </section>
+
+<section class="contact">
+  <div class="contact__row">
+
+    <!-- LEFT SIDE : CONTACT INFO (Same as before) -->
+    <div class="contact-col">
+      <div class="contact-col__div">
+        <i class="fa-solid fa-house"></i>
+        <span class="contact-col__div__span">
+          <h5 class="contact-col__div__span__h5">XYZ Road, ABC Building</h5>
+          <p class="contact-col__div__span__p">Larisa, Thessaly, GR</p>
+        </span>
+      </div>
+
+      <div class="contact-col__div">
+        <i class="fa-solid fa-phone"></i>
+        <span class="contact-col__div__span">
+          <h5 class="contact-col__div__span__h5">+30 241055533</h5>
+          <p class="contact-col__div__span__p">Monday to Friday, 10AM to 2PM</p>
+        </span>
+      </div>
+
+      <div class="contact-col__div">
+        <i class="fa-solid fa-envelope"></i>
+        <span class="contact-col__div__span">
+          <h5 class="contact-col__div__span__h5">cecry-cs@uth.gr</h5>
+          <p class="contact-col__div__span__p">Email us your query</p>
+        </span>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE : WEB3 FORMS CONTACT FORM -->
+    <div class="contact-col">
+
+      <form action="https://api.web3forms.com/submit"
+            method="POST"
+            id="contactForm"
+            onsubmit="return validateForm()">
+
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="695be255-460e-45d0-96ec-76511d5176a2">
+
+        <!-- Name -->
+        <p class="contact-col__p">
+          <label class="contact-col__p__label" for="name">Name</label>
+          <input class="contact-col__p__input"
+                 type="text"
+                 id="name"
+                 name="name"
+                 placeholder="Enter your full name">
+          <div id="nameError" class="error-message-box" style="display:none;">
+            This field is required.
+          </div>
+        </p>
+
+        <!-- Email -->
+        <p class="contact-col__p">
+          <label class="contact-col__p__label" for="email">Email</label>
+          <input class="contact-col__p__input"
+                 type="email"
+                 id="email"
+                 name="email"
+                 placeholder="Enter your email address">
+          <div id="emailError" class="error-message-box" style="display:none;">
+            This field is required.
+          </div>
+        </p>
+
+        <!-- Subject -->
+        <p class="contact-col__p">
+          <label class="contact-col__p__label" for="subject">Subject</label>
+          <input class="contact-col__p__input"
+                 type="text"
+                 id="subject"
+                 name="subject"
+                 placeholder="Enter your subject">
+        </p>
+
+        <!-- Message -->
+        <p class="contact-col__p">
+          <label class="contact-col__p__label" for="message">Your message</label>
+          <textarea class="contact-col__p__textarea"
+                    id="message"
+                    name="Message"
+                    rows="8"
+                    placeholder="Enter your message"></textarea>
+          <div id="messageError" class="error-message-box" style="display:none;">
+            This field is required.
+          </div>
+        </p>
+
+        <button type="submit" class="btn btn2">Send Message</button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+    <p class="center bttt">
+        <a class="bttt__a" href="#">Back to the top</a>
+    </p>
+
+    <!-- FOOTER SECTION -->
+    <section class="footer">
+        <h4 class="footer__h4">About Us</h4>
+        <p class="footer__p">We are committed to shaping the future by providing quality education, fostering
+            innovation, and inspiring individuals to achieve their full potential.<br>Our university values diversity,
+            inclusivity, and excellence, aiming to create a global community of learners and leaders.</p>
+        <div class="footer__icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>All copyrights belong to the University of Lalaland<br>&lt;&lt;&lt; &copy; 2024 &gt;&gt;&gt;</p>
+    </section>
+
+</body>
+
+</html>
