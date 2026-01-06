@@ -6,44 +6,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University of Lalaland - about</title>
+
+    <title>University of Lalaland</title>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Font Awesome (Hamburger & Icons) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- JavaScript -->
     <script src="main.js" defer></script>
 </head>
 
+
 <body>
 <section class="subheader">
-        <nav class="subheader__nav">
-            <a href="index.html"><img src="./images/logo.png" alt="" /></a>
-            <!-- NAVIGATIONAL LINKS -->
-            <div class="header__links" id="headerLinks">
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
+    <nav class="subheader__nav">
+        <a href="index.html">
+            <img src="./images/logo.png" alt="University Logo">
+        </a>
 
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </nav>
-  
-        <!-- HEADER SECTION -->
-        <div class="header__textbox">
-            <h1 class="header__h1">World's Biggest University</h1>
-            <p class="header__p">Making a website is now one of the easiest thing in the world.<br>You just need to
-                learn HTML, CSS and JavaScript and you are ready to go</p>
-            <a class="header__a" href="">Visit Us to know more</a>
+        <!-- NAVIGATIONAL LINKS -->
+        <div class="subheader__links" id="headerLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
         </div>
-    </section>
+
+        <!-- HAMBURGER ICON -->
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- HEADER TEXT -->
+    <div class="subheader__textbox">
+        <h1 class="subheader__h1">World's Biggest University</h1>
+        <p class="subheader__p">
+            Making a website is now one of the easiest things in the world.<br>
+            You just need to learn HTML, CSS and JavaScript and you are ready to go.
+        </p>
+        <a class="subheader__a" href="#">Visit Us to know more</a>
+    </div>
+</section>
+
     <!-- COURSE SECTION -->
     <section class="course">
         <h1 class="course__h1">Courses We Offer</h1>
@@ -224,4 +242,5 @@
 </body>
 
 </html>
+
 
